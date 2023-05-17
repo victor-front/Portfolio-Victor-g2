@@ -53,17 +53,29 @@ const menuRedu = () => `
 `
 
 const menuX = () => `
-	<div class="menu-ham" style="position: relative; margin-top: 40px;" onclick="menu(2)">
-		<div class="line" style="transform: rotate(320deg); left: 1px; position: absolute;"></div>
-		<div class="line" style="transform: rotate(-320deg); position: absolute;"></div>
+	<div class="menu-ham" style="position: relative; margin-top: 10px;" onclick="menu(2)">
+		<div class="line" style="transform: rotate(320deg); left: 1px; position: absolute; top: 20px;"></div>
+		<div class="line" style="transform: rotate(-320deg); position: absolute; top: 20px;"></div>
 	</div>
+`
+
+const menuLi = () => `
+	<ul class="menu-coluna">
+		<li><a rel="prev" href="#" target="_self">Home</a></li>
+		<li><a rel="next" href="#" target="_self">Sobre</a></li>
+		<li><a rel="next" href="#" target="_self">Portfólio</a></li>
+		<li><a rel="next" href="#" target="_self">Serviços</a></li>
+		<li><a rel="next" href="#" target="_self">Contato</a></li>
+	</ul>
 `
 
 function menu(valor){//Verificar se o menu deve estar aberto ou fechado
 	if(valor == 1){
 		document.querySelector(".nav").innerHTML = menuX();
+		document.body.innerHTML += menuLi();
 	}else if(valor == 2){
 		document.querySelector(".nav").innerHTML = menuRedu();
+		document.querySelector(".menu-coluna").remove();
 	}
 }
 
@@ -78,6 +90,9 @@ function verificar(){//Sistema que verifica a largura do body
 		if(document.body.clientWidth >= 680){//Se a largura do body for maior ou igual a 680...
 			document.querySelector(".section").innerHTML = section1();
 			document.querySelector(".nav").innerHTML = menuNo();
+			if(document.querySelector(".menu-coluna")){
+				document.querySelector(".menu-coluna").remove();
+			}
 			p = 1;
 		}
 	}
