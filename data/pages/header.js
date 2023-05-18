@@ -1,38 +1,4 @@
-p = 1; //Etapas de verificação
-
-const section1 = () => `
-	<div class="cluna-nicktec">
-		<p class="descricao">Olá! Eu sou <strong>Victor Aguiar</strong>, tenho 17 anos e amo expressar minhas artes e sentimentos por onde quer que eu passo!</p>
-		<div class="secao-tecnologias">
-			<img src="data/html5.png" class="tec-img">
-			<img src="data/css3.png" class="tec-img">
-			<img src="data/js.png" class="tec-img">
-			<img src="data/git.png" class="tec-img">
-			<img src="data/github.png" class="tec-img">
-		</div>
-	</div>
-	<div class="nick-pfp">
-		<h1 class="nome">Victor Aguiar</h1>
-		<img src="data/pfp.jpg" class="pfp">
-	</div>
-`;
-
-const section2 = () => `
-	<div class="nick-pfp">
-		<h1 class="nome">Victor Aguiar</h1>
-		<img src="data/pfp.jpg" class="pfp">
-	</div>
-	<div class="cluna-nicktec">
-		<p class="descricao">Olá! Eu sou <strong>Victor Aguiar</strong>, tenho 17 anos e amo expressar minhas artes e sentimentos por onde quer que eu passo!</p>
-		<div class="secao-tecnologias">
-			<img src="data/html5.png" class="tec-img">
-			<img src="data/css3.png" class="tec-img">
-			<img src="data/js.png" class="tec-img">
-			<img src="data/git.png" class="tec-img">
-			<img src="data/github.png" class="tec-img">
-		</div>
-	</div>
-`;
+ph = 1; //Etapas de verificação
 
 const menuNo = () => `
 	<ul>
@@ -79,24 +45,22 @@ function menu(valor){//Verificar se o menu deve estar aberto ou fechado
 	}
 }
 
-function verificar(){//Sistema que verifica a largura do body
-	if(p == 1){//Se p(parte, etapa) for igual a 1, fazer verificação 1
+function verificarH(){//Sistema que verifica a largura do body
+	if(ph == 1){//Se p(parte, etapa) for igual a 1, fazer verificação 1
 		if(document.body.clientWidth <= 680){//Se a largura do body for menor ou igual a 680...
-			document.querySelector(".section").innerHTML = section2();
 			document.querySelector(".nav").innerHTML = menuRedu();
-			p = 2;
+			ph = 2;
 		}
-	}else if(p == 2){
+	}else if(ph == 2){
 		if(document.body.clientWidth >= 680){//Se a largura do body for maior ou igual a 680...
-			document.querySelector(".section").innerHTML = section1();
 			document.querySelector(".nav").innerHTML = menuNo();
 			if(document.querySelector(".menu-coluna")){
 				document.querySelector(".menu-coluna").remove();
 			}
-			p = 1;
+			ph = 1;
 		}
 	}
 	setTimeout(()=>{//Rebobinar a função
-		verificar();
+		verificarH();
 	}, 100);
-}verificar();//Dar load na função assim que o arquivo js for carregado
+}verificarH();//Dar load na função assim que o arquivo js for carregado
