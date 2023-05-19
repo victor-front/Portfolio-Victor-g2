@@ -50,3 +50,7 @@ function verificar(){//Sistema que verifica a largura do body
 		verificar();
 	}, 100);
 }verificar();//Dar load na função assim que o arquivo js for carregado
+
+setTimeout(()=>{
+	document.querySelector(".section").style.display = 'flex';
+}, 100)
