@@ -1,12 +1,28 @@
 ph = 1; //Etapas de verificação
 
+/*
+const linkList = [
+	document.querySelectorAll(".link")[0].getAttribute("href"),
+	document.querySelectorAll(".link")[1].getAttribute("href"),
+	document.querySelectorAll(".link")[2].getAttribute("href"),
+	document.querySelectorAll(".link")[3].getAttribute("href"),
+	document.querySelectorAll(".link")[4].getAttribute("href")
+];
+*/
+
+const linkList = [];
+
+for(c=0; c < document.querySelectorAll(".link").length; c++){
+	linkList.push(document.querySelectorAll(".link")[c].getAttribute("href"));
+}
+
 const menuNo = () => `
 	<ul>
-		<li><a rel="prev" href="#" target="_self">Home</a></li>
-		<li><a rel="next" href="#" target="_self">Sobre</a></li>
-		<li><a rel="next" href="#" target="_self">Portfólio</a></li>
-		<li><a rel="next" href="#" target="_self">Serviços</a></li>
-		<li><a rel="next" href="#" target="_self">Contato</a></li>
+		<li><a rel="prev" href="${linkList[0]}" target="_self">Home</a></li>
+		<li><a rel="next" href="${linkList[1]}" target="_self">Sobre</a></li>
+		<li><a rel="next" href="${linkList[2]}" target="_self">Portfólio</a></li>
+		<li><a rel="next" href="${linkList[3]}" target="_self">Serviços</a></li>
+		<li><a rel="next" href="${linkList[4]}" target="_self">Contato</a></li>
 	</ul>
 `
 
@@ -27,11 +43,11 @@ const menuX = () => `
 
 const menuLi = () => `
 	<ul class="menu-coluna">
-		<li><a rel="prev" href="#" target="_self">Home</a></li>
-		<li><a rel="next" href="#" target="_self">Sobre</a></li>
-		<li><a rel="next" href="#" target="_self">Portfólio</a></li>
-		<li><a rel="next" href="#" target="_self">Serviços</a></li>
-		<li><a rel="next" href="#" target="_self">Contato</a></li>
+		<li><a rel="prev" href="${linkList[0]}" target="_self">Home</a></li>
+		<li><a rel="next" href="${linkList[1]}" target="_self">Sobre</a></li>
+		<li><a rel="next" href="${linkList[2]}" target="_self">Portfólio</a></li>
+		<li><a rel="next" href="${linkList[3]}" target="_self">Serviços</a></li>
+		<li><a rel="next" href="${linkList[4]}" target="_self">Contato</a></li>
 	</ul>
 `
 
