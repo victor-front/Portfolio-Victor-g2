@@ -1,18 +1,7 @@
 ph = 1; //Etapas de verificação
 
-/*
-const linkList = [
-	document.querySelectorAll(".link")[0].getAttribute("href"),
-	document.querySelectorAll(".link")[1].getAttribute("href"),
-	document.querySelectorAll(".link")[2].getAttribute("href"),
-	document.querySelectorAll(".link")[3].getAttribute("href"),
-	document.querySelectorAll(".link")[4].getAttribute("href")
-];
-*/
-
-const linkList = [];
-
-for(c=0; c < document.querySelectorAll(".link").length; c++){
+const linkList = [];//Definir o vetor
+for(c=0; c < document.querySelectorAll(".link").length; c++){//Looping que acaba quando a contagem não for menor que a lista de links do header do HTML
 	linkList.push(document.querySelectorAll(".link")[c].getAttribute("href"));
 }
 
