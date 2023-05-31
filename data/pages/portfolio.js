@@ -1,7 +1,25 @@
 const projetos = {//Objetos que armazenam valores fundamentas para os elementos/projetos
-	nome: ['Teste1', 'Teste2', 'Teste3'],
-	caminho: ['#', '#', '#'],
-	caminhoIMG: ['../img/teste.png', '../img/teste.png', '../img/teste.png']
+	nome: [
+	'Sign Up', 
+	'Discord Profile', 
+	'ClockJS',
+	'Twitter Profile', 
+	'Pokéquiz', 
+	'Calculadora'],
+	caminho: [
+	'https://victor-front.github.io/signup/', 
+	'https://victor-front.github.io/Discord-Profile/', 
+	'https://victor-front.github.io/clock/',
+	'https://victor-front.github.io/Twitter-Profile/',
+	'https://victor-front.github.io/pokequiz/',
+	'https://victor-front.github.io/calculadora/'],
+	caminhoIMG: [
+	'../img/thumbs/signup.png', 
+	'../img/thumbs/discord-profile.png', 
+	'../img/thumbs/clock.png',
+	'../img/thumbs/twitter.png',
+	'../img/thumbs/pokequiz.png',
+	'../img/thumbs/calculadora.png']
 }
 
 function adicionar(){//Adicionar os elementos na sessão
