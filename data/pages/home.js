@@ -13,14 +13,14 @@ const section1 = () => `
 	</div>
 	<div class="nick-pfp">
 		<h1 class="nome">Victor Aguiar</h1>
-		<img src="data/img/pfp.jpg" class="pfp">
+		<img src="data/img/v-0.jpg" class="pfp">
 	</div>
 `;
 
 const section2 = () => `
 	<div class="nick-pfp">
 		<h1 class="nome">Victor Aguiar</h1>
-		<img src="data/img/pfp.jpg" class="pfp">
+		<img src="data/img/v-0.jpg" class="pfp">
 	</div>
 	<div class="cluna-nicktec">
 		<p class="descricao">Olá! Eu sou <strong>Victor Aguiar</strong>, tenho 17 anos e amo expressar minhas artes e sentimentos por onde quer que eu passo!</p>
@@ -53,4 +53,4 @@ function verificar(){//Sistema que verifica a largura do body
 
 setTimeout(()=>{
 	document.querySelector(".section").style.display = 'flex';
-}, 100)
+}, 100);
