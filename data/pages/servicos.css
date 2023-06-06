@@ -56,3 +56,51 @@ html{
 	padding: 10px;
 	border-radius: 10px;
 }
+
+.s-desenho{
+	background-color: #8D478A;
+	padding: 10px;
+	border-radius: 10px;
+	color: #222;
+}
+
+.s-desenho .s-body{
+	background-color: #222;
+	padding: 10px;
+	color: #ddd;
+	border-radius: 10px;
+}
+
+.s-desenho .s-body a{
+	color: #D46A6A;
+	text-decoration: none;
+}
+
+.s-desenho .s-body a:hover{
+	text-decoration: underline;
+}
+
+.s-desenho .s-body p, .s-desenho .s-body ul li{
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+
+.s-desenho img{
+	display: flex;
+	max-width: 65%;
+	border-radius: 10px;
+	margin: 20px auto 20px auto;
+}
+
+.s-desenho .s-body ul{
+	margin-left: 25px;
+	margin-bottom: 10px;
+}
+
+.s-desenho .s-body h2{
+	margin-bottom: 10px;
+}
+
+.s-desenho .s-body ul li{
+	margin-bottom: 5px;
+}
