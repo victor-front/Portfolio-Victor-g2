@@ -104,3 +104,37 @@ html{
 .s-desenho .s-body ul li{
 	margin-bottom: 5px;
 }
+
+.s-design{
+	background-color: #615192;
+	padding: 10px;
+	margin-top: 10px;
+	color: #222;
+	border-radius: 10px;
+}
+
+
+.s-design .s-body{
+	background-color: #222;
+	padding: 10px;
+	border-radius: 10px;
+	color: #ddd;
+}
+
+.s-design .s-body p{
+	font-size: 1.1em;
+	margin-bottom: 10px;
+}
+
+.s-design .s-body h2{
+	margin-bottom: 10px;
+}
+
+.s-design .s-body li{
+	margin-bottom: 5px;
+	font-size: 1.1em;
+}
+
+.s-design .s-body ul li{
+	margin-left: 25px;
+}
