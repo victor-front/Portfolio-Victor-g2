@@ -12,5 +12,58 @@ body, html{
 }
 
 body{
+	background-color: #2b2b2b;
+}
+
+.section{
+	max-width: 800px;
+	border: 2px solid #bb2222;
+	border-radius: 5px;
+	margin: 20px auto;
 	background-color: #363636;
+}
+
+.cont-header{
+	background-color: #bb2222;
+	padding: 10px;
+	font-size: 1.3em;
+	color: #ddd;
+	text-align: center;
+}
+
+.cont-body{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 10px;
+}
+
+.contatoEl{
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	width: 100%;
+	max-width: 200px;
+	max-height: 200px;
+	background-color: #bb2222;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 10px;
+}
+
+.contato-header{
+	background-color: #666;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	font-size: 1.1em;
+	color: #ddd;
+}
+
+.contato-body{
+	height: 200px;
+	background-color: #464646;
+	background-position: 50% 10%;
+	background-repeat: no-repeat;
+	background-size: 150px;
 }
