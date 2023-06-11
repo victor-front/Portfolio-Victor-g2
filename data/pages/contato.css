@@ -22,6 +22,7 @@ body{
 	border-radius: 5px;
 	margin: 20px auto;
 	background-color: #363636;
+	transition: 450ms;
 }
 
 .cont-header{
@@ -52,12 +53,17 @@ body{
 	flex-direction: column;
 	cursor: pointer;
 	width: 100%;
+	background-color: #464646;
 	max-width: 200px;
 	max-height: 200px;
-	background-color: #bb2222;
 	border-radius: 10px;
 	overflow: hidden;
 	margin: 10px;
+	transition: 450ms;
+}
+
+.contatoEl:active{
+	background-color: #ddd;
 }
 
 .contato-header{
@@ -71,8 +77,37 @@ body{
 
 .contato-body{
 	height: 200px;
-	background-color: #464646;
 	background-position: 50% 20%;
 	background-repeat: no-repeat;
 	background-size: 50%;
+}
+
+@media (max-width: 685px){
+	.section{
+		width: 100%;
+		max-width: 500px;
+	}
+	
+	.cont-body{
+		display: grid;
+		margin-top: 10px;
+		grid-template-columns: 180px 180px;
+		gap: 10px;
+	}
+	
+	.contatoEl{
+		max-width: 180px;
+		max-height: 180px;
+		margin: 0;
+	}
+}
+
+@media (max-width: 410px){
+	.section{
+		max-width: 300px;
+	}
+	
+	.cont-body{
+		grid-template-columns: 180px;
+	}
 }
