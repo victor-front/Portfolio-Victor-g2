@@ -32,9 +32,9 @@ function add(){//Loop que adiciona o elemento na sessão de contatos
 	for(c=0;c<contatos.nomes.length;c++){
 		document.querySelector(".cont-body").innerHTML += contatoEl(`${contatos.nomes[c]}`, `${contatos.clicks[c]}`, `${contatos.imgs[c]}`, `${contatos.positionsY[c]}`, `${contatos.sizes[c]}`);
 	}
-}add();
+}add();//Chamar a função add();
 
-function copy(click, nome){
+function copy(click, nome){//Função que copia o texto do elemento de contato clicado
 	navigator.clipboard.writeText(click);
 	document.querySelector(".aviso p").innerHTML = `Endereço do ${nome} copiado!`;
 }
